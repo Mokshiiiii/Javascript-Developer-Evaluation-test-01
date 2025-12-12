@@ -54,6 +54,10 @@ function taskCreated(text) {
         return;
       }
 
+
+
+
+      
       span.textContent = newValue;
 
       li.replaceChild(span, inputBox);
