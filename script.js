@@ -1,7 +1,6 @@
 //Javascript
 const taskInput = document.querySelector("#taskInput");
 const addBtn = document.querySelector("#addBtn");
-
 const ul = document.querySelector("ul");
 const li = document.querySelector("li");
 
@@ -32,9 +31,7 @@ function taskCreated(text) {
   li.appendChild(editBtn);
   li.appendChild(delBtn);
 
-
   editBtn.addEventListener("click", function () {
-
 
     if (editBtn.textContent === " Edit ") {
       let inputBox = document.createElement("input");
@@ -45,7 +42,7 @@ function taskCreated(text) {
 
       editBtn.textContent = "Save";
     }
-    else {l 
+    else {
       let inputBox = li.querySelector("input");
       let newValue = inputBox.value.trim();
 
@@ -53,11 +50,6 @@ function taskCreated(text) {
         alert("Task cannot be empty");
         return;
       }
-
-
-      
-
-
       span.textContent = newValue;
 
       li.replaceChild(span, inputBox);
